@@ -1,0 +1,491 @@
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Montserrat-ExtraBold";
+    src: url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+                                                                                                                        /*TAGS STYLES*/
+
+*
+{
+    font-family: Montserrat-SemiBold, serif;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #181818;
+    opacity: 1; /* Firefox */
+    font-size: 1rem;
+    font-family: Montserrat-SemiBold, serif;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #181818;
+    font-size: 1rem;
+    font-family: Montserrat-SemiBold, serif;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #181818;
+    font-size: 1rem;
+    font-family: Montserrat-SemiBold, serif;
+  }
+
+input:-webkit-autofill
+{
+    -webkit-text-fill-color: #d4874a !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active
+{
+    -webkit-box-shadow: 0 0 0 30px #2c2c2c inset !important;
+
+}
+
+input
+{
+    outline: none !important;
+}
+
+a
+{
+    color: #181818;
+    transition: 0.5s !important;
+    -webkit-transition: 0.5s !important;
+    -moz-transition: 0.5s !important;
+    -ms-transition: 0.5s !important;
+    -o-transition: 0.5s !important;
+}
+
+a:hover
+{
+    text-decoration: none;
+    color: #d4874a;
+    border-color: #d4874a;
+    transition: 0.5s;
+}
+
+i
+{
+    color: #181818;
+    transition: 0.5s !important;
+    -webkit-transition: 0.5s !important;
+    -moz-transition: 0.5s !important;
+    -ms-transition: 0.5s !important;
+    -o-transition: 0.5s !important;
+}
+
+i:hover
+{
+    text-decoration: none;
+    color: #d4874a;
+    border-color: #d4874a;
+    transition: 0.5s;
+}
+
+                                                                                                                        /*SCROLLBAR*/
+
+::-webkit-scrollbar-button {
+    width:5px;
+    height:0px;
+    background-color: #DFDB2D;
+}
+
+::-webkit-scrollbar-track {
+    background-color: lightslategray;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #d4874a;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #1d2124;
+}
+
+::-webkit-resizer{
+
+    background-color: #DFDB2D;
+    line-height: 1.5;
+    border-radius: 1.5rem;
+    width:4px;
+    height:0px;
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+    background-color: #DFDB2D;
+}
+
+.hide-sb::-webkit-scrollbar {
+    display: none;
+}
+
+.main
+{
+    margin: calc(50% - 830px) 0;
+}                                                                                                                       /*ELEMENTS*/
+
+.section
+{
+    padding: 0 calc(50% - 600px);
+}
+
+.section_bar
+{
+    padding: 0 calc(50% - 600px);
+}
+
+.quarter
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+    width: 100%;
+}
+
+.half
+{
+    display: flex;
+    padding: 24px !important;
+    justify-content: space-between;
+    width: 50% !important;
+    flex-flow: column;
+    position: relative;
+    align-content: center;
+}
+
+.site-header
+{
+    background-color: #242222;
+    height: 100px;
+    color: #000000;
+}
+
+.side
+{
+    width: 16rem;
+    height: 600px;
+    border-radius: 3rem !important;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.nav-crate
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+}
+
+.nav-button-container
+{
+    width: 5.5rem;
+    height: 5.5rem;
+    /* background-color: #2C2C2C; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    /* box-shadow: 0px 2px 2px 1px #292929;
+    border: 3px solid #292929; */
+}
+
+.nav-button
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.search-button
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    background-color: #2C2C2C;
+    width: 20%;
+
+}
+
+.text-button
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    background-color: #2C2C2C;
+    padding: 1rem;
+    width: 13rem;
+    border: none;
+}
+
+.quarter-button
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: Montserrat-ExtraBold, serif;
+
+}
+
+.banner
+{
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.frame
+{
+    width: 75rem;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.frame-list
+{
+    max-height: calc(600px - 3rem);
+    overflow: auto;
+}
+
+.frame-list-quarter
+{
+    max-height: 240px;
+    overflow: auto;
+}
+
+.bar_icon
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.promo_card-quarter
+{
+    height: 150px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.promo_card
+{
+    height: 300px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.logo
+{
+    font-family: Montserrat-ExtraBold, serif;
+    font-size: 5rem;
+}
+
+.avatar
+{
+    background-size:cover;
+    background-position:center center;
+    border-radius: 100%;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.time-holder
+{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.time-item
+{
+    display: flex;
+    justify-content: center;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 6rem;
+    background-color: #2C2C2C;
+    color: #d4874a;
+    border: 3px solid #3f3f3f;
+
+}
+
+                                                                                                                        /*ANIMATIONS*/
+
+.bronze-animation
+{
+    color: #181818;
+}
+
+.bronze-animation:hover
+{
+    text-decoration: none;
+    color: #d4874a;
+    transition: 0.5s;
+}
+
+                                                                                                                        /*TEXT STYLES*/
+
+.text-bronze
+{
+    color: #d4874a;
+}
+
+.text-gray
+{
+    color: darkgray;
+}
+
+.text-black
+{
+    color: black !important;
+}
+
+.text-black:hover
+{
+    text-decoration: none;
+    color: #d4874a !important;
+    border-color: #d4874a;
+    transition: 0.5s;
+}
+                                                                                                                        /*TRANSITION STYLES*/
+
+.hover-dark:hover
+{
+    text-decoration: none;
+    color: darkgray;
+    transition: 0.5s;
+}
+
+.transition
+{
+    transition: 0.5s;
+}
+
+.transition-fade
+{
+    transition: 0.5s;
+    opacity: 1;
+}
+
+html.is_animating .transition-fade{
+    opacity: 0;
+}
+                                                                                                                        /*BACKGROUNDS*/
+
+.bg-dark-main
+{
+    background-color: #242222;
+}
+
+.bg-second-dark
+{
+    background-color: #2C2C2C;
+}
+
+.bg-second-dark-active
+{
+    background-color: #2C2C2C;
+}
+
+.bg-second-dark-active:hover
+{
+    background-color: #242222;
+}
+
+.bg-bronze
+{
+    background: #d4874a;
+}
+
+.btn-gradient:hover
+{
+    color: #000000;
+    transition: 0.5s;
+    background: rgb(173,100,22);
+    background: linear-gradient(45deg, rgb(173, 100, 22) 0%, rgb(194, 118, 41) 30%, rgb(216, 136, 59) 70%, rgb(255, 189, 65) 100%);
+    box-shadow: 0 0 0 4px #d4874a;
+}
+
+                                                                                                                        /*FONT SIZE*/
+
+.montserrat-bold
+{
+    font-family: Montserrat-ExtraBold, serif;
+    font-size: 1.2rem;
+}
+
+.font-size-2
+{
+    font-size: 3rem;
+}
+
+.font-size-1wh
+{
+    font-size: 2.5rem;
+}
+
+.font-size-1
+{
+    font-size: 2rem;
+}
+
+.font-size-0
+{
+    font-size: 1.5rem;
+}
+
+.font-size-mini
+{
+    font-size: 0.75rem;
+}
+
+                                                                                                                        /*ROUNDED*/
+
+.rounded-l
+{
+    border-radius: 1.5rem !important;
+}
+
+.rounded-xl
+{
+    border-radius: 3rem !important;
+}
+
+.rounded_circle
+{
+    border-radius: 100%;
+}
